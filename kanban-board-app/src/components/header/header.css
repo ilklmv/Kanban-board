@@ -34,28 +34,37 @@
 }
 
 .arrow-down {
+    margin: 0 auto;
     width: 0.75rem; 
     height: 0.46375rem;
     cursor: pointer; 
 }
 
+.arrow-up {
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+
 .dropdown-menu {
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #fff; /* Цвет фона меню */
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 10rem;
+    top: 5rem;
+    right: 2rem;
+    background-color: #fff; 
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 .dropdown-menu a {
     display: block;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     text-decoration: none;
-    color: #333; /* Цвет текста ссылок */
+    color: #333; 
 }
 
 .dropdown-menu a:hover {
-    background-color: #f0f0f0; /* Цвет фона при наведении на ссылку */
+    background-color: #f0f0f0; 
 }
+

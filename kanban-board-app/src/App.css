@@ -15,9 +15,40 @@ main {
   border-radius: 0.625rem;
   width: 22rem;
   height: fit-content;
+  max-height: 60rem;
+  overflow-y: auto;
   padding-bottom: 1rem;
   border: 0.0625rem solid #ddd;
   word-wrap: break-word;
+}
+
+.board__column::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.board__column::-webkit-scrollbar-thumb {
+  background-color: #CBCBCB;
+  border-radius: 0.25rem;
+  height: 5rem;
+}
+
+.board__column::-webkit-scrollbar-track {
+  margin: 2rem;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .board__column {
+    flex-direction: row;
+    margin: 2rem auto; 
+    height: 20rem;
+    overflow-y: auto;
+    max-width: none; 
+  }
 }
 
 h3 {
@@ -115,3 +146,4 @@ select::after {
   line-height: 1.313rem;
   text-align: left;
 }
+
